@@ -28,6 +28,7 @@ public class AddressService {
     public String updateAddressFirstname(Long id, String firstname) {
         Address address = iAddressRepo.findById(id).orElseThrow();
         address.setFirstName(firstname);
+        iAddressRepo.save(address);
         return "address firstname updated";
     }
 

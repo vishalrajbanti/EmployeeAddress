@@ -26,5 +26,5 @@ public class Employee {
 
     @OneToOne
     @JoinColumn(name = "fk_add")
-    private Address address;
+     Address address;
 }
